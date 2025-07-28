@@ -1,0 +1,27 @@
+[package]
+name = "Arkworks-Seminar-2025-Summer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ark-bn254 = "0.4.0"
+ark-bls12-381 = "0.4.0"
+ark-crypto-primitives = { version = "0.4.0", default-features = true, features = ["r1cs", "prf", "signature", "crh", "merkle_tree"] }
+ark-ec = "0.4.2"
+ark-ed-on-bls12-381 = { version = "^0.4.0", features = ["r1cs"] }
+ark-ff = "0.4.2"
+ark-groth16 = "0.4.0"
+ark-poly = "0.4.2"
+ark-r1cs-std = "0.4.0"
+ark-relations = "0.4.0"
+ark-serialize = "0.4.2"
+ark-std = "0.4.0"
+rand = "0.8.5"
+blake2 = "0.10.6"
+num-bigint = "0.4.6"
+
+[dev-dependencies]
+ark-test-curves = { version = "0.4.0", default-features = false, features = ["bls12_381_scalar_field"] }
+
+[features]
+print-trace = [ "ark-std/print-trace" ]
