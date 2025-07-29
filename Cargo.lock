@@ -6,11 +6,10 @@ version = 4
 name = "Arkworks-Seminar-2025-Summer"
 version = "0.1.0"
 dependencies = [
- "ark-bls12-381",
  "ark-bn254",
  "ark-crypto-primitives",
  "ark-ec",
- "ark-ed-on-bls12-381",
+ "ark-ed-on-bn254",
  "ark-ff",
  "ark-groth16",
  "ark-poly",
@@ -19,7 +18,6 @@ dependencies = [
  "ark-serialize",
  "ark-std",
  "ark-test-curves",
- "blake2",
  "num-bigint",
  "rand",
 ]
@@ -34,18 +32,6 @@ dependencies = [
  "once_cell",
  "version_check",
  "zerocopy",
-]
-
-[[package]]
-name = "ark-bls12-381"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c775f0d12169cba7aae4caeb547bb6a50781c7449a8aa53793827c9ec4abf488"
-dependencies = [
- "ark-ec",
- "ark-ff",
- "ark-serialize",
- "ark-std",
 ]
 
 [[package]]
@@ -99,12 +85,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "ark-ed-on-bls12-381"
+name = "ark-ed-on-bn254"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ba6d678bb98a7e4f825bd4e332e93ac4f5a114ce2e3340dee4d7dc1c7ab5b323"
+checksum = "71892f265d01650e34988a546b37ea1d2ba1da162a639597a03d1550f26004d8"
 dependencies = [
- "ark-bls12-381",
+ "ark-bn254",
  "ark-ec",
  "ark-ff",
  "ark-r1cs-std",
